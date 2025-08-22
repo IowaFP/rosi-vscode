@@ -1,0 +1,26 @@
+import Ro.Base
+
+type NatF : * -> *
+type NatF = \n. Sigma { 'Zero := Unit, 'Succ := n}
+
+type Nat : *
+type Nat = Mu NatF
+
+zero : Nat
+zero = in (inj (#'Zero := tt))
+
+succ : Nat -> Nat
+succ = \n. in (inj (#'Succ := n))
+
+one : Nat
+one = succ zero
+
+two : Nat
+two = succ one
+
+add : Nat -> Nat -> Nat
+add = \m. fix (\add n. (case #'Zero (\u. m) ? case #'Succ (\nn. succ (add nn))) (out n))
+
+three : Nat
+three = add one two
+

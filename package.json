@@ -10,16 +10,25 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "rosi",
-      "aliases": ["Rosi", "rosi"],
-      "extensions": [".ro"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "rosi",
-      "scopeName": "source.rosi",
-      "path": "./syntaxes/rosi.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "rosi",
+        "aliases": [
+          "Rosi",
+          "rosi"
+        ],
+        "extensions": [
+          ".ro"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "rosi",
+        "scopeName": "source.rosi",
+        "path": "./syntaxes/rosi.tmLanguage.json"
+      }
+    ]
   }
 }
