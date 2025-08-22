@@ -29,6 +29,11 @@
           "match": "\\\\."
         }
       ]
+    },
+    "comments": {
+      "name": "comment.line",
+      "begin": "--",
+      "end": "\n"
     }
   },
   "scopeName": "source.rosi"
