@@ -60,9 +60,9 @@
       "patterns": [
         {
           "name": "keyword.operator.rosi",
-          "match": "[\\!\\#\\$\\%\\&\\;\\+\\.\\/\\<\\>\\=\\?\\@\\^\\|\\-\\~\\*]+"
+          "match": "[\\!\\#\\$\\%\\&\\;\\+\\.\\/\\<\\>\\=\\?\\@\\^\\|\\-\\~\\*\\:\\\\]+"
         },
-        { "name": "keyword.operator.new", "match": "\\b(prj|inj)\\b" }
+        { "name": "keyword.operator.new.rosi", "match": "\\b(prj|inj)\\b" }
       ]
     }
   },
