@@ -8,14 +8,19 @@
     },
     {
       "include": "#strings"
-    }
+    },
+    {
+      "include": "#labels"
+    },
+    { "include": "#constants" },
+    { "include": "#operators" }
   ],
   "repository": {
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.rosi",
-          "match": "\\b(if|while|for|return)\\b"
+          "name": "keyword.other.rosi",
+          "match": "\\b(forall|type)\\b"
         }
       ]
     },
@@ -31,9 +36,34 @@
       ]
     },
     "comments": {
-      "name": "comment.line",
+      "name": "comment.line.rosi",
       "begin": "--",
       "end": "\n"
+    },
+    "labels": {
+      "patterns": [
+        {
+          "name": "string.quoted.unquoted.other.rosi",
+          "match": "(\\'\\w+)\\b"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.language.rosi",
+          "match": "\\b(Pi|Sigma)\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.rosi",
+          "match": "[\\!\\#\\$\\%\\&\\;\\+\\.\\/\\<\\>\\=\\?\\@\\^\\|\\-\\~\\*]+"
+        },
+        { "name": "keyword.operator.new", "match": "\\b(prj|inj)\\b" }
+      ]
     }
   },
   "scopeName": "source.rosi"
