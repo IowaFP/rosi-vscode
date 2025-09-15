@@ -3,6 +3,7 @@
   "name": "Rosi",
   "patterns": [
     { "include": "#comments" },
+    { "include": "#types" },
     {
       "include": "#keywords"
     },
@@ -40,6 +41,9 @@
       "begin": "--",
       "end": "\n"
     },
+    "types": {
+      "patterns": [{ "match": "(#'?\\w+?)\\b", "name": "meta.type.name.rosi" }]
+    },
     "labels": {
       "patterns": [
         {
@@ -60,7 +64,7 @@
       "patterns": [
         {
           "name": "keyword.operator.rosi",
-          "match": "[\\!\\#\\$\\%\\&\\;\\+\\.\\/\\<\\>\\=\\?\\@\\^\\|\\-\\~\\*\\:\\\\]+"
+          "match": "[\\!\\$\\%\\&\\;\\+\\.\\/\\<\\>\\=\\?\\@\\^\\|\\-\\~\\*\\:\\\\]+"
         },
         { "name": "keyword.operator.new.rosi", "match": "\\b(prj|inj)\\b" }
       ]
