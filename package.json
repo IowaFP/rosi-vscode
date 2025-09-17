@@ -1,7 +1,7 @@
 {
   "name": "rosi-vscode",
   "publisher": "clc-iowa",
-  "displayName": "Rosi Language Support",
+  "displayName": "Rosi",
   "description": "Rosi language support for vscode",
   "version": "0.0.1",
   "repository": "https://github.com/IowaFP/rosi-vscode",
