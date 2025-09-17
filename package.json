@@ -3,6 +3,7 @@
   "displayName": "Rosi Language Support",
   "description": "Rosi language support for vscode",
   "version": "0.0.1",
+  "repository": "https://github.com/IowaFP/rosi-vscode",
   "engines": {
     "vscode": "^1.103.0"
   },
