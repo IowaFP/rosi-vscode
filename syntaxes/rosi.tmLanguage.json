@@ -21,7 +21,7 @@
       "patterns": [
         {
           "name": "keyword.other.rosi",
-          "match": "\\b(forall|type)\\b"
+          "match": "\\b(forall|type|import)\\b"
         }
       ]
     },
@@ -37,9 +37,18 @@
       ]
     },
     "comments": {
-      "name": "comment.line.rosi",
-      "begin": "--",
-      "end": "\n"
+      "patterns": [
+        {
+          "name": "comment.block.rosi",
+          "begin": "{-",
+          "end": "-}"
+        },
+        {
+          "name": "comment.line.rosi",
+          "begin": "--",
+          "end": "\n"
+        }
+      ]
     },
     "types": {
       "patterns": [{ "match": "(#'?\\w+?)\\b", "name": "meta.type.name.rosi" }]
@@ -56,7 +65,7 @@
       "patterns": [
         {
           "name": "constant.language.rosi",
-          "match": "\\b(Pi|Sigma)\\b"
+          "match": "\\b(Pi|Sigma|Mu)\\b"
         }
       ]
     },
@@ -66,7 +75,7 @@
           "name": "keyword.operator.rosi",
           "match": "[\\!\\$\\%\\&\\;\\+\\.\\/\\<\\>\\=\\?\\@\\^\\|\\-\\~\\*\\:\\\\]+"
         },
-        { "name": "keyword.operator.new.rosi", "match": "\\b(prj|inj)\\b" }
+        { "name": "keyword.operator.new.rosi", "match": "\\b(prj|inj|fix|in|out)\\b" }
       ]
     }
   },
