@@ -51,13 +51,13 @@
       ]
     },
     "types": {
-      "patterns": [{ "match": "(#'?\\w+?)\\b", "name": "meta.type.name.rosi" }]
+      "patterns": [{ "match": "(#'?\\w+?)\\b", "name": "string.quoted.unquoted.other.rosi" }]
     },
     "labels": {
       "patterns": [
         {
           "name": "string.quoted.unquoted.other.rosi",
-          "match": "(\\'\\w+)\\b"
+          "match": "\\B(\\'\\w+)\\b"
         }
       ]
     },
