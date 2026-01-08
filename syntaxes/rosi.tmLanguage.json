@@ -21,7 +21,7 @@
       "patterns": [
         {
           "name": "keyword.other.rosi",
-          "match": "\\b(forall|type|import)\\b"
+          "match": "\\b(forall|type|import|let|in)\\b"
         }
       ]
     },
@@ -75,7 +75,7 @@
           "name": "keyword.operator.rosi",
           "match": "[\\!\\$\\%\\&\\;\\+\\.\\/\\<\\>\\=\\?\\@\\^\\|\\-\\~\\*\\:\\\\]+"
         },
-        { "name": "keyword.operator.new.rosi", "match": "\\b(prj|inj|fix|in|out)\\b" }
+        { "name": "keyword.operator.new.rosi", "match": "\\b(prj|inj|fix)\\b" }
       ]
     }
   },
