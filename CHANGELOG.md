@@ -7,3 +7,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 - Initial release
+
+## [0.2.0]
+
+- Add highlighting for greek letters used as type constructor operators
+- Remove .DS_Store junk file and add to .gitignore
