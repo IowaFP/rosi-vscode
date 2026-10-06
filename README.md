@@ -12,3 +12,17 @@ We are seeking funding to develop the following additional features. If you are 
 
 - Semantic Highlighting
 - Language Server Protocol (LSP) Support
+
+## Publishing the Extension
+
+Follow the instructions [here](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token) to create a Personal Access Token
+
+To set the PAT or overwrite the old one, run
+
+```shell
+npx vsce login clc-iowa
+```
+
+```shell
+npm run publish-ext
+```
