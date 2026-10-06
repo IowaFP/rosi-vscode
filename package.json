@@ -12,7 +12,7 @@
     "Programming Languages"
   ],
   "scripts": {
-    "publish-ext": "npx vsce login clc-iowa && npx vsce package && npx vsce publish"
+    "publish-ext": "npx vsce login clc-iowa ; npx vsce package && npx vsce publish"
   },
   "contributes": {
     "languages": [
